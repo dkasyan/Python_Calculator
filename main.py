@@ -23,7 +23,7 @@ def multiplicationing(first_number, second_number):
     return new_number
 
 def divisioning(first_number, second_number):
-    new_number = int(first_number) / int(second_number)
+    new_number = (int(first_number)/(int(second_number)))
     logging.INFO(f"Dziele {first_number} i {second_number}")
     print(new_number)
     return new_number
@@ -61,11 +61,14 @@ if __name__ == '__main__':
 
         if action == '1':
             adding(number1, number2)
-            break
         elif action == '2':
             removaling(number1, number2)
         elif action == "3":
             multiplicationing(number1, number2)
+        elif action == "4":
+            divisioning(number1, number2)
+
+
         # number1 = input_number()
         # ...
         # if action == '1':
