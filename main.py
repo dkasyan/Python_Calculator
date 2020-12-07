@@ -62,6 +62,10 @@ if __name__ == '__main__':
         if action == '1':
             adding(number1, number2)
             break
+        elif action == '2':
+            removaling(number1, number2)
+        elif action == "3":
+            multiplicationing(number1, number2)
         # number1 = input_number()
         # ...
         # if action == '1':
