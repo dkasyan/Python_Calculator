@@ -4,27 +4,29 @@ logging.basicConfig(level=logging.DEBUG)
 
 
 def adding(first_number, second_number):
-    #  new_number = sum(int(first_number), int(second_number)) #Dlaczego to nie zadziała ???
-    new_number = int(first_number) + int(second_number)
+    #  new_number = sum(float(first_number), float(second_number)) #Dlaczego to nie zadziała ???
+    new_number = float(first_number) + float(second_number)
     logging.info(f"Dodaję {first_number} i {second_number}")
     print(new_number)
     return(new_number)
 
 def removaling(first_number, second_number):
-    new_number = int(first_number) - int(second_number)
+    new_number = float(first_number) - float(second_number)
     logging.info(f"Odejmuję {first_number} i {second_number}")
     print(new_number)
     return new_number
 
 def multiplicationing(first_number, second_number):
-    new_number = int(first_number) * int(second_number)
+    new_number = float(first_number) * float(second_number)
     logging.info(f"Mnoze {first_number} i {second_number}")
     print(new_number)
     return new_number
 
 def divisioning(first_number, second_number):
-    new_number = (int(first_number)/(int(second_number)))
-    logging.INFO(f"Dziele {first_number} i {second_number}")
+    first = float(first_number)
+    second = float(second_number)
+    new_number = first / second
+    logging.info(f"Dziele {first_number} i {second_number}")
     print(new_number)
     return new_number
 
@@ -32,13 +34,13 @@ def divisioning(first_number, second_number):
 ### Czy to wszystko da się przesunąć do funkcji asking ?
 # result_asking = asking()
 # print(type(result_asking[1]))
-# if int(result_asking[0]) == 1:
+# if float(result_asking[0]) == 1:
 #     adding(result_asking[1], result_asking[2])
-# elif int(result_asking[0]) == 2:
+# elif float(result_asking[0]) == 2:
 #     removaling(result_asking[1], result_asking[2])
-# elif int(result_asking[0]) == 3:
+# elif float(result_asking[0]) == 3:
 #     multiplicationing(result_asking[1], result_asking[2])
-# elif int(result_asking[0]) == 4:
+# elif float(result_asking[0]) == 4:
 #     divisioning(result_asking[1], result_asking[2])
 
 
